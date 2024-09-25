@@ -1,0 +1,111 @@
+.banner-section {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .banner-img-container {
+    width: 100%;
+    height: 100%;
+
+    .banner-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .banner-img-overlay {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+  }
+
+  .banner-content {
+    position: absolute;
+    width: 900px;
+    height: 90%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+    z-index: 10;
+
+    .banner-heading {
+      width: 700px;
+      font-family: "Raleway-extra-light";
+      font-size: 40px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      line-height: 65px;
+      text-align: center;
+      color: white;
+    }
+    .banner-btn-div {
+      .banner-btn {
+        width: 260px;
+        height: 55px;
+        border-radius: 50px;
+        border: 2px solid white;
+        background-color: rgba($color: #fff, $alpha: 0.2);
+        font-size: 28px;
+        font-family: "Raleway-light";
+        color: #fff;
+        cursor: pointer;
+      }
+      :hover {
+        border: 2px solid black;
+        background: rgba($color: white, $alpha: 0.6);
+        color: black;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .banner-section {
+    margin-top: 4rem;
+    width: 100%;
+    height: 450px;
+
+    .banner-img-container {
+      width: 100%;
+      height: 100%;
+
+      .banner-img-overlay {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .banner-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 20%;
+      }
+    }
+    .banner-content {
+      width: 90%;
+      gap: 1rem;
+      .banner-heading {
+        font-size: 20px;
+        line-height: 40px;
+      }
+      .banner-btn-div {
+        .banner-btn {
+          width: 160px;
+          height: 60px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

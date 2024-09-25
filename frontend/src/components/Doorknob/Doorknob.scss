@@ -1,0 +1,53 @@
+.doorknobs-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+
+  .made-doorknobs {
+    width: 60px;
+    height: 130px;
+    border-radius: 50px;
+    margin-left: 0.5rem;
+    border: 1.5px solid black;
+   
+    .made-doorknob {
+      width: 60px;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+
+      .dot {
+        position: absolute;
+        top: 3px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: black;
+      }
+      .doorknob-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        .made-doorknob-img {
+          width: 28px;
+          height: auto;
+          color: black;
+        }
+        .doorknob-text {
+          font-family: "Raleway-regular";
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Raleway-black";
+  src: url("./fonts/Raleway-Black.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-black-italic";
+  src: url("./fonts/Raleway-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-bold";
+  src: url("./fonts/Raleway-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-bold-italic";
+  src: url("./fonts/Raleway-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-extra-bold";
+  src: url("./fonts/Raleway-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-extra-light";
+  src: url("./fonts/Raleway-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-light";
+  src: url("./fonts/Raleway-Light.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-medium";
+  src: url("./fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-regular";
+  src: url("./fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-semibold";
+  src: url("./fonts/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-thin";
+  src: url("./fonts/Raleway-Thin.ttf");
+}
+
+@font-face {
+  font-family: "SaveurSansRound-bold";
+  src: url("./fonts/SaveurSansRound-Bold.ttf");
+}
+
+@font-face {
+  font-family: "SaveurSansRound-light";
+  src: url("./fonts/SaveurSansRound-Light.ttf");
+}
+
+@font-face {
+  font-family: "SaveurSansRound-regular";
+  src: url("./fonts/SaveurSansRound-Regular.ttf");
+}
+
+@font-face {
+  font-family: "SaveurSansRound-semibold";
+  src: url("./fonts/SaveurSansRound-Semi-bold.ttf");
+}
+
+:root {
+  --primary-pink: #faab7d;
+  --black: #0b0b0b;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  max-width: 100%;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "SaveurSansRound-light";
+  font-size: clamp(3rem, 10vw, 4rem);
+  line-height: clamp(3rem, 10vw, 4.5rem);
+  letter-spacing: 0.025em;
+  color: "#000";
+}
+
+h2 {
+  font-family: "Raleway-regular";
+  font-size: clamp(0.5rem, 10vw, 3rem);
+  line-height: clamp(2rem, 10vw, 3.5rem);
+  letter-spacing: 0.025em;
+  color: "#000";
+}
+
+h3 {
+  font-family: "Raleway-regular";
+  font-size: clamp(1.5rem, 10vw, 2rem);
+  line-height: clamp(2rem, 10vw, 3rem);
+  letter-spacing: 0.025em;
+  color: "#000";
+}
+
+h4 {
+  font-family: "Raleway-regular";
+  font-size: clamp(1.25rem, 10vw, 1.5em);
+  line-height: clamp(1.5rem, 10vw, 2rem);
+  letter-spacing: 0.025em;
+  color: "#000";
+}
+
+p {
+  font-family: "Raleway-regular";
+  font-size: clamp(0.875rem, 5vw, 1rem);
+  line-height: clamp(1.5rem, 10vw, 2rem);
+  letter-spacing: 0.025em;
+  color: "#000";
+}
+
+.active {
+  color: var(--primary-pink);
+}

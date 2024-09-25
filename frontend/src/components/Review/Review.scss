@@ -1,0 +1,70 @@
+.review-left {
+  width: 350px;
+
+  .review-text-container {
+    width: fit-content;
+    height: auto;
+    position: relative;
+    padding: 0 1rem;
+
+    .quote-start,
+    .quote-end {
+      position: absolute;
+      width: 20px;
+      height: auto;
+    }
+
+    .quote-start {
+      top: 0;
+      left: 0;
+    }
+    .quote-end {
+      bottom: 0;
+      right: 0;
+    }
+
+    .review-para {
+      font-family: "Raleway-regular";
+      font-size: 16px;
+      line-height: 25px;
+      color: #3f4545;
+      margin: 0 0.75rem;
+    }
+  }
+  .review-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    .review-profile-img {
+      width: 50px;
+      height: 50px;
+    }
+    .review-name {
+      font-family: "Raleway-semibold";
+      font-size: 22px;
+      line-height: 40px;
+      color: #3f4545;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .review-left {
+    width: 100%;
+    padding: 1.5rem;
+
+    .review-para {
+      font-size: 12px;
+    }
+    .review-profile {
+      .review-profile-img {
+        width: 50px;
+        height: 50px;
+      }
+      .review-name {
+        font-size: 16px;
+      }
+    }
+  }
+}
